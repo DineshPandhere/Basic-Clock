@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#ffffff;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #212121;
+    background-image: url(https://images.pexels.com/photos/5553737/pexels-photo-5553737.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    inn
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.Name h1{
+    
+    position: absolute;
+    top: 0;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+    
+}
+
+.container-2{
+    position: relative;
+    background-color: #212121;
+    
+    border-radius: 50%;
+}
+
+.clock{
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+}
+
